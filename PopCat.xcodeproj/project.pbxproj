@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		D3411AD226CE94EB003C1CA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3411AD126CE94EB003C1CA4 /* ContentView.swift */; };
 		D3411AD426CE94EC003C1CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3411AD326CE94EC003C1CA4 /* Assets.xcassets */; };
 		D3411AD726CE94EC003C1CA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3411AD626CE94EC003C1CA4 /* Preview Assets.xcassets */; };
+		D3411ADF26CEADBC003C1CA4 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3411ADE26CEADBC003C1CA4 /* NetworkMonitor.swift */; };
+		D3411AE126CEAF6F003C1CA4 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3411AE026CEAF6F003C1CA4 /* LottieView.swift */; };
+		D3411AE426CEAFBA003C1CA4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D3411AE326CEAFBA003C1CA4 /* Lottie */; };
+		D3411AE626CEB07C003C1CA4 /* 36012-searching-wifi.json in Resources */ = {isa = PBXBuildFile; fileRef = D3411AE526CEB07C003C1CA4 /* 36012-searching-wifi.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		D3411AD326CE94EC003C1CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3411AD626CE94EC003C1CA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3411AD826CE94EC003C1CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3411ADE26CEADBC003C1CA4 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		D3411AE026CEAF6F003C1CA4 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		D3411AE526CEB07C003C1CA4 /* 36012-searching-wifi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "36012-searching-wifi.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3411AE426CEAFBA003C1CA4 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +60,11 @@
 		D3411ACE26CE94EA003C1CA4 /* PopCat */ = {
 			isa = PBXGroup;
 			children = (
+				D3411AE526CEB07C003C1CA4 /* 36012-searching-wifi.json */,
 				D3411ACF26CE94EA003C1CA4 /* PopCatApp.swift */,
 				D3411AD126CE94EB003C1CA4 /* ContentView.swift */,
+				D3411ADE26CEADBC003C1CA4 /* NetworkMonitor.swift */,
+				D3411AE026CEAF6F003C1CA4 /* LottieView.swift */,
 				D3411AD326CE94EC003C1CA4 /* Assets.xcassets */,
 				D3411AD826CE94EC003C1CA4 /* Info.plist */,
 				D3411AD526CE94EC003C1CA4 /* Preview Content */,
@@ -85,6 +96,9 @@
 			dependencies = (
 			);
 			name = PopCat;
+			packageProductDependencies = (
+				D3411AE326CEAFBA003C1CA4 /* Lottie */,
+			);
 			productName = PopCat;
 			productReference = D3411ACC26CE94EA003C1CA4 /* PopCat.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +126,9 @@
 				Base,
 			);
 			mainGroup = D3411AC326CE94EA003C1CA4;
+			packageReferences = (
+				D3411AE226CEAFBA003C1CA4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = D3411ACD26CE94EA003C1CA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3411AE626CEB07C003C1CA4 /* 36012-searching-wifi.json in Resources */,
 				D3411AD726CE94EC003C1CA4 /* Preview Assets.xcassets in Resources */,
 				D3411AD426CE94EC003C1CA4 /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3411AD226CE94EB003C1CA4 /* ContentView.swift in Sources */,
+				D3411ADF26CEADBC003C1CA4 /* NetworkMonitor.swift in Sources */,
 				D3411AD026CE94EA003C1CA4 /* PopCatApp.swift in Sources */,
+				D3411AE126CEAF6F003C1CA4 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"PopCat/Preview Content\"";
 				DEVELOPMENT_TEAM = DW8PG2JYW5;
 				ENABLE_PREVIEWS = YES;
@@ -290,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"PopCat/Preview Content\"";
 				DEVELOPMENT_TEAM = DW8PG2JYW5;
 				ENABLE_PREVIEWS = YES;
@@ -328,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3411AE226CEAFBA003C1CA4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3411AE326CEAFBA003C1CA4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3411AE226CEAFBA003C1CA4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3411AC426CE94EA003C1CA4 /* Project object */;
 }
